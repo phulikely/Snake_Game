@@ -63,7 +63,7 @@ class SnakeGame:
     def _place_food(self):
         """
         Without [*FOOD_SIZE], snake may never get the food
-        For example: (0, (10-3)//3) * 3 always give an multiple number
+        For example: (0, (10-3)//3) * 3 always give an multiple number(bội số)
         Đảm bảo rằng randint trong khoảng (0, ?) luôn chia hết cho FOOD_SIZE
         Nếu ko chia hết thì snake sẽ ko bh ăn được food(do khác x hoặc y)
         """
