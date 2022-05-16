@@ -69,6 +69,8 @@ class SnakeGame:
         """
         x = random.randint(0, (self.width-FOOD_SIZE)//FOOD_SIZE)*FOOD_SIZE
         y = random.randint(0, (self.height-FOOD_SIZE)//FOOD_SIZE)*FOOD_SIZE
+        # x = random.randint(0, round((self.width-FOOD_SIZE))/FOOD_SIZE)*FOOD_SIZE
+        # y = random.randint(0, round((self.height-FOOD_SIZE))/FOOD_SIZE)*FOOD_SIZE
 
         self.food = Point(x, y)
         if self.food in self.snake:
@@ -160,10 +162,10 @@ class SnakeGame:
         #5. update ui and clock
         self._update_ui()
         self.clock.tick(SPEED)
-        
+
         #6. return game over and score
         return game_over, self.score
-    
+
 
 if __name__ == '__main__':
     game = SnakeGame()
