@@ -140,7 +140,7 @@ class SnakeGame:
         #2. move
         self._move(self.direction)  #update the head
         """
-        insert a new head and remove the tail each time it's doesn't eat the food
+        Insert a new head and remove the tail each time it's doesn't eat the food
         """
         self.snake.insert(0, self.head)
         
